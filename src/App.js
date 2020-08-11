@@ -5,9 +5,9 @@ import EditUserForm from './forms/EditUserForm'
 
 const App = () => {
   const usersData = [
-    { id: 1, name: "Idan", username: "idan50z" },
-    { id: 2, name: "Kait", username: "nurselover12" },
-    { id: 3, name: "John", username: "golfhobby90" },
+    { id: 1, name: "Idan", username: "idan50z", spiritAnimal: "Dog" },
+    { id: 2, name: "Kait", username: "nurselover12", spiritAnimal: "Wolf" },
+    { id: 3, name: "John", username: "golfhobby90", spiritAnimal: "Whale" },
   ]
 
   const [users, setUsers] = useState(usersData)

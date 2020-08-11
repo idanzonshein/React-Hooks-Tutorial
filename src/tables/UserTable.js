@@ -6,6 +6,7 @@ const UserTable = (props) => (
       <tr>
         <th>Name</th>
         <th>Username</th>
+        <th>Spirit Animal</th>
         <th>Actions</th>
       </tr>
     </thead>
@@ -15,6 +16,7 @@ const UserTable = (props) => (
           <tr key={user.id}>
             <td>{user.name}</td>
             <td>{user.username}</td>
+            <td>{user.spiritAnimal}</td>
             <td>
             <button
               onClick={() => {
