@@ -24,13 +24,13 @@ const App = () => {
   }
 
   const [editing, setEditing] = useState(false)
-  const initialFormState = { id: null, name: '', username: '' }
+  const initialFormState = { id: null, name: '', username: '', spiritAnimal: '' }
   const [currentUser, setCurrentUser] = useState(initialFormState)
 
   const editRow = (user) => {
     setEditing(true)
 
-    setCurrentUser({ id: user.id, name: user.name, username: user.username })
+    setCurrentUser({ id: user.id, name: user.name, username: user.username, spiritAnimal: user.spiritAnimal})
   }
 
   const updateUser = (id, updatedUser) => {

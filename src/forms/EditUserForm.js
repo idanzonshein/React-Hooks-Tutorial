@@ -35,6 +35,13 @@ const EditUserForm = (props) => {
         value={user.username}
         onChange={handleInputChange}
       />
+      <label>Spirit Animal</label>
+      <input
+        type="text"
+        name="spiritAnimal"
+        value={user.spiritAnimal}
+        onChange={handleInputChange}
+      />
       <button>Update user</button>
       <button
         onClick={() => props.setEditing(false)}
